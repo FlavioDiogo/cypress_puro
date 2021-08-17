@@ -1,6 +1,6 @@
 /// <reference types ="cypress"/>
 
-import {Sauce} from '../../pages/SauceDemo/teste.page'
+import {Sauce} from '../../pages/sauce.pages/teste.page'
 
 describe('Realizar login', () => {
     context('Dado que esteja na pagina home do site sauce.demo', () => {
