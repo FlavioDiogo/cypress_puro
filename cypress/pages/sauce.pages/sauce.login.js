@@ -1,7 +1,7 @@
 import Base from '../_base.page'
-import {Login as log} from '../../pages/components/sauce.elements/login.elements'
+import {Login as log} from '../components/sauce.elements/login.elements'
 
-export class Sauce extends Base {
+export class Sauce_login extends Base {
 
 
     static logar_sauce_demo(){

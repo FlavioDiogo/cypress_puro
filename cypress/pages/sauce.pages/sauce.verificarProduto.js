@@ -1,8 +1,10 @@
+import Base from '../_base.page'
+import {Verifica as verProduto} from '../components/sauce.elements/validaProduto.elements'
 
-
-
+export class Sauce_verificarProduto extends Base {
 
 
 static verificar_produto(){
-    cy.get(ver.ver_produto).should('exist')
+    cy.get(verProduto.ver_produto).should('exist')
   }
+}

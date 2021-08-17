@@ -1,6 +1,7 @@
 /// <reference types ="cypress"/>
 
-import {Sauce} from '../../pages/sauce.pages/teste.page'
+import {Sauce_login} from '../../pages/sauce.pages/sauce.login'
+import {Sauce_verificarLogado} from '../../pages/sauce.pages/sauce.verificarLogado'
 
 describe('Realizar login', () => {
     context('Dado que esteja na pagina home do site sauce.demo', () => {
@@ -9,10 +10,10 @@ describe('Realizar login', () => {
         })
         context('Quando preencher os campos com dados validos', () => {
             beforeEach(() => {
-                Sauce.logar_sauce_demo()
+                Sauce_login.logar_sauce_demo()
         }) 
              it('Então deverá exibir a pagina de produtos com o usuario logado', () => {
-                Sauce.verificar_logado()
+                Sauce_verificarLogado.verificar_logado()
             })
         })   
     })        

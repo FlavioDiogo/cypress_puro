@@ -1,7 +1,7 @@
 import Base from '../_base.page'
-import {Produtos as addProd} from '../../pages/components/sauce.elements/carrinho.elements'
+import {Produtos as addProd} from '../components/sauce.elements/carrinho.elements'
 
-export class Sauce extends Base {
+export class Sauce_adicionarProduto extends Base {
 
 
     static adicionar_produto(){

@@ -1,7 +1,7 @@
 import Base from '../_base.page'
-import {Acessar as ac} from '../components/sauce.elements/carrinho.elements'
+import {AcessarCarrinho as ac} from '../components/sauce.elements/carrinho.elements'
 
-export class Sauce extends Base {
+export class Sauce_acessarCarrinho extends Base {
 
 
     static acessar_carrinho(){
