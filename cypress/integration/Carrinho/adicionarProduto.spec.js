@@ -1,10 +1,10 @@
-import { Sauce_adicionarProduto } from '../../pages/sauce.pages/sauce.adicionarProduto'
 /// <reference types ="cypress"/>
 
 import {Sauce_login} from '../../pages/sauce.pages/sauce.login'
 import {Sauce_verificarLogado} from '../../pages/sauce.pages/sauce.verificarLogado'
 import {Sauce_acessarCarrinho} from '../../pages/sauce.pages/sauce.acessarCarrinho'
 import {Sauce_verificarProduto} from '../../pages/sauce.pages/sauce.verificarProduto'
+import {Sauce_adicionarProduto } from '../../pages/sauce.pages/sauce.adicionarProduto'
 
 
 describe('Adicionar produto no carrinho', () => {
