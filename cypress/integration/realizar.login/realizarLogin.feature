@@ -1,8 +1,8 @@
-Feature: Adicionar produto
+Feature: Realizar login
 
-    Scenario: Adicionar produto no carrinho
-      Dado que esteja logado e na pagina de produtos da sauce.demo
-      Quando clicar para adicionar um produto no carrinho
-      Então deverá exibir o produto escolhido dentro do carrinho
+    Scenario: Realizar login no site da saude.demo
+      Dado que esteja na pagina home do site sauce.demo
+      Quando preencher os campos com dados validos
+      Então deverá exibir a pagina de produtos com o usuario logado
 
 

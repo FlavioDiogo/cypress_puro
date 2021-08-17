@@ -2,13 +2,18 @@
 
 import {Sauce} from '../../pages/SauceDemo/teste.page'
 
-describe('Adicionar produto no carrinho', () => {
-    context('Dado que esteja logado e na pagina de produtos da sauce.demo', () => {
+describe('Realizar login', () => {
+    context('Dado que esteja na pagina home do site sauce.demo', () => {
         beforeEach(() => {
             cy.visit('www.saucedemo.com')
-            Sauce.logar_sauce_demo()
-            Sauce.verificar_logado()
-            
         })
+        context('Quando preencher os campos com dados validos', () => {
+            beforeEach(() => {
+                Sauce.logar_sauce_demo()
+        }) 
+             it('Então deverá exibir a pagina de produtos com o usuario logado', () => {
+                Sauce.verificar_logado()
+            })
+        })   
     })        
-})    
+})     
