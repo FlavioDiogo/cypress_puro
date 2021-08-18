@@ -9,4 +9,9 @@ export class Sauce_login extends Base {
       super.typeValue(log.add_password, 'secret_sauce')
       super.clickOnElement(log.btn_login)
     }
+
+    static valida_logado(){
+      cy.get(log.val_logado_click).click()
+      cy.get(log.val_logado_valida).should('be.visible')
+    } 
 }    

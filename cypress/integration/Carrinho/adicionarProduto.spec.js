@@ -1,10 +1,9 @@
 /// <reference types ="cypress"/>
 
 import {Sauce_login} from '../../pages/sauce.pages/sauce.login'
-import {Sauce_verificarLogado} from '../../pages/sauce.pages/sauce.verificarLogado'
-import {Sauce_acessarCarrinho} from '../../pages/sauce.pages/sauce.acessarCarrinho'
-import {Sauce_verificarProduto} from '../../pages/sauce.pages/sauce.verificarProduto'
-import {Sauce_adicionarProduto } from '../../pages/sauce.pages/sauce.adicionarProduto'
+import {Sauce_carrinho} from '../../pages/sauce.pages/sauce.carrinho'
+import {Sauce_produto} from '../../pages/sauce.pages/sauce.produto'
+
 
 
 describe('Adicionar produto no carrinho', () => {
@@ -12,18 +11,18 @@ describe('Adicionar produto no carrinho', () => {
         beforeEach(() => {
             cy.visit('www.saucedemo.com')
             Sauce_login.logar_sauce_demo()
-            Sauce_verificarLogado.verificar_logado()
+            Sauce_login.valida_logado()
             
         })
         context('Quando clicar para adicionar um produto no carrinho', () => {
             beforeEach(() => {
-                Sauce_adicionarProduto.adicionar_produto()
+                Sauce_produto.adicionar_produto()
                 
             })
 
             it('Então deverá exibir o produto escolhido dentro do carrinho', () => {
-                Sauce_acessarCarrinho.acessar_carrinho()
-                Sauce_verificarProduto.verificar_produto()
+                Sauce_carrinho.acessar_carrinho()
+                Sauce_produto.validar_produto()
                 
             }) 
              
