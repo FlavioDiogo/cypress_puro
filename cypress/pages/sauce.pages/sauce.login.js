@@ -7,6 +7,7 @@ export class Sauce_login extends Base {
     static logar_sauce_demo(){
       super.typeValue(log.add_user, 'standard_user')
       super.typeValue(log.add_password, 'secret_sauce')
+      cy.get(log.btn_login).click()
     }
 
     static valida_logado(){

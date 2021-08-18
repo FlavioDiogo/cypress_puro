@@ -4,8 +4,6 @@ import {Sauce_login} from '../../pages/sauce.pages/sauce.login'
 import {Sauce_carrinho} from '../../pages/sauce.pages/sauce.carrinho'
 import {Sauce_produto} from '../../pages/sauce.pages/sauce.produto'
 
-
-
 describe('Adicionar produto no carrinho', () => {
     context('Dado que esteja logado e na pagina de produtos da sauce.demo', () => {
         beforeEach(() => {
@@ -14,7 +12,7 @@ describe('Adicionar produto no carrinho', () => {
             Sauce_login.valida_logado()
             
         })
-        context('Quando clicar para adicionar um produto no carrinho', () => {
+            context('Quando clicar para adicionar um produto no carrinho', () => {
             beforeEach(() => {
                 Sauce_produto.adicionar_produto()
                 
@@ -28,9 +26,7 @@ describe('Adicionar produto no carrinho', () => {
              
         })
     })
- 
 })
-
 
 
 
@@ -98,3 +94,30 @@ describe
     it
 
 */
+
+
+
+/*describe('Adicionar produto no carrinho', () => {
+    context('Dado que esteja logado e na pagina de produtos da sauce.demo', () => {
+        beforeEach(() => {
+            cy.visit('www.saucedemo.com')
+            Sauce_login.logar_sauce_demo()
+            Sauce_login.valida_logado()
+            
+        })
+        context('Quando clicar para adicionar um produto no carrinho', () => {
+            beforeEach(() => {
+                Sauce_produto.adicionar_produto()
+                
+            })
+
+            it('Então deverá exibir o produto escolhido dentro do carrinho', () => {
+                Sauce_carrinho.acessar_carrinho()
+                Sauce_produto.validar_produto()
+                
+            }) 
+             
+        })
+    })
+ 
+})*/
