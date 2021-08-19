@@ -29,13 +29,18 @@ Cypress.Commands.add('validarLogin', (tipo) => {
             case 'valido': {
                     cy.get(Login.val_logado_click).click()
                     cy.get(Login.val_logado_valida).should('be.visible')
+                    cy.log("Login realizado com sucesso")
                     break
+                    
             }
             case 'invalido': {
                     cy.get(Login.error_btn_locked).should('exist')
+                    cy.log("Dados inválidos, favor verificar")
+                    break
             }
             case 'bloqueado': {
                     cy.get(Login.error_btn_locked).should('exist')
+                    cy.log("Dados inválidos, favor verificar")
                     
             }
         }    

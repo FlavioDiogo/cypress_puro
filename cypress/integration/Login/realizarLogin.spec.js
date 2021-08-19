@@ -9,15 +9,8 @@ describe('Realizar login', () => {
                 cy.visit('www.saucedemo.com')
                 cy.realizarLogin(item.username, item.password)
                 cy.validarLogin(item.tipo)
-            //it('Então deverá exibir a pagina de produtos com o usuario logado', () => {
-                   
-                //})    
-              
             })             
         }) 
-           // it('Então deverá exibir a pagina de produtos com o usuario logado', () => {
-               // cy.validarLogado()
-           // })
-          
-   })        
+    })
+           
 })     
